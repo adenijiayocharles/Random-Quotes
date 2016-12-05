@@ -21,7 +21,8 @@ var quotes = [
 	"Ask and it will be given to you; search, and you will find; knock and the door will be opened for you. - Jesus",
 	"The only person you are destined to become is the person you decide to be. - Ralph Waldo Emerson"
 ];
-
+document.body.onkeyup = function(e){
+	if(e.keyCode == 32){
 //get length of array
 var quotesLength = quotes.length;
 
@@ -41,5 +42,8 @@ var replaceAuthorWithEmpty = singleQuote.replace(author,"");
 var author = author.replace("- ","");
 
 //add quotes and author to dom
-document.getElementById("quotes").innerHTML = replaceAuthorWithEmpty;
-document.getElementById("author").innerHTML = author;
+
+		document.getElementById("quotes").innerHTML = replaceAuthorWithEmpty;
+		document.getElementById("author").innerHTML = author;			
+	}
+};
