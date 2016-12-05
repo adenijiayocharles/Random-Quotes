@@ -36,3 +36,10 @@ var hyphenIndex = singleQuote.lastIndexOf("-");
 
 //get quote author
 var author = singleQuote.substring(hyphenIndex);
+
+var replaceAuthorWithEmpty = singleQuote.replace(author,"");
+var author = author.replace("- ","");
+
+//add quotes and author to dom
+document.getElementById("quotes").innerHTML = replaceAuthorWithEmpty;
+document.getElementById("author").innerHTML = author;

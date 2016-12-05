@@ -1,0 +1,7 @@
+@import "reset.css";
+body{
+	font-size: 12px;
+	color: #F5F5F5;
+	line-height: 25px;
+	background: #263238;
+}
