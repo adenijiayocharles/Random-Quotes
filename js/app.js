@@ -19,12 +19,20 @@ var quotes = [
 	"People often say that motivation doesn't last. Well, neither does bathing.  That's why we recommend it daily. - Zig Ziglar",
 	"There is only one way to avoid criticism: do nothing, say nothing, and be nothing. - Aristotle",
 	"Ask and it will be given to you; search, and you will find; knock and the door will be opened for you. - Jesus",
-	"The only person you are destined to become is the person you decide to be. –Ralph Waldo Emerson"
+	"The only person you are destined to become is the person you decide to be. - Ralph Waldo Emerson"
 ];
 
 //get length of array
 var quotesLength = quotes.length;
 
-//random
+// random number generator
 var random = Math.floor(Math.random() * quotesLength);
-console.log(quotes[random]);
+
+// get single quotes
+var singleQuote = quotes[random];
+
+//get last index of - to get quote author
+var hyphenIndex = singleQuote.lastIndexOf("-");
+
+//get quote author
+var author = singleQuote.substring(hyphenIndex);
