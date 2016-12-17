@@ -1,7 +1,24 @@
 @import "reset.css";
 body{
-	font-size: 12px;
+	font-size: 16px;
 	color: #F5F5F5;
 	line-height: 25px;
 	background: #263238;
+}
+
+.wrapper{
+	width: 1000px;
+	height: auto;
+	text-align: center;
+	margin: auto;
+	margin-top: 250px;
+}
+
+#author{
+	color: #FFF;
+	font-style: oblique;
+}
+
+.clear{
+	display: none;
 }
